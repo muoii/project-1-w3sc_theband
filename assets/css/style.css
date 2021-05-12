@@ -1,0 +1,428 @@
+/* CSS reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS common */
+
+.clear{
+    clear: both;
+}
+
+.clear-after::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.txt-white{
+    color: white !important;
+}
+
+.txt-center{
+    text-align: center !important;
+}
+
+.txt-justify{
+    text-align: justify !important;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.ml-16{
+    margin-left: 16px;
+}
+    /* ROW COL - common */
+.row{
+    margin: 0 -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding: 0 8px;
+}
+
+.col-right{
+    float: right;
+    padding: 0 8px;
+}
+
+    /* COL TYPE */
+    .col-ful{
+        width: 100%;
+    }
+
+    .col-half{
+        width: 50%;
+    }
+
+    .col-third{
+        width: 33.333333%;
+    }
+
+.btn-click{
+    font-weight: 400;
+    color: white;
+    background: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-click:hover{
+    color: black;
+    background: #ccc;
+}
+/* CSS selector */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#wrapper{
+
+}
+/* HEADER */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+/* NAV */
+#nav{
+    display: inline-block;
+    left: 0;
+}
+
+#nav > .target{
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+
+    /* pos */
+    position: relative;
+}
+
+#nav > .target:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#nav > .target > i{
+    position: relative;
+    top: 2px;
+}
+
+#nav div:hover > .subnav{
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /* pos */
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav-container .target{
+    display: block;
+    background-color: white;
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    line-height: 22px;
+
+    padding: 8px 16px;
+    width: 160px;
+}
+
+#nav .subnav-container .target:hover{
+    background-color: #ccc;
+}
+
+/* SEARCH BUTTON */
+#search-btn{
+    display: inline-block;
+    color: white;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#menu-nav{
+    display: none;
+}
+/* CONTENT */
+
+#content{
+
+}
+
+.content-box{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-box .header{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.content-box .sub-header{
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    color: rgb(204, 204, 204);
+}
+
+/* CONTENT - SLIDER */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    text-shadow: 0 0 2 px #ccc;
+    background: url('/assets/img/chicago.jpg') top center / cover no-repeat ;
+}
+
+#slider .note-text{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    text-align: center;
+    color: white;
+
+    padding: 32px 0;
+}
+
+#slider .note-header{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 500; 
+}
+
+#slider .note-detail{
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+/* CONTENT - INTRO */
+
+#intro .content-box .detail{
+    margin: 15px 0;
+    text-align: justify;
+}
+
+#list-mem{
+    padding: 32px 0;
+}
+
+#list-mem .mem-item{
+    text-align: center;
+}
+
+#list-mem .mem-name{
+    margin: 15px;
+}
+
+#list-mem .mem-img{
+    border-radius: 4px;
+    width: 154px;
+    padding-bottom: 16px;
+}
+/* CONTENT - TOUR */
+
+#tour{
+    background-color: black;  
+}
+
+#tour .content-box{
+}
+
+#ticket-state{
+    font-size: 15px;
+    color: gray;
+    background-color: #fff;
+    list-style-type: none;
+}
+
+#ticket-state .ticket-month{
+    line-height: 22px;
+    padding: 8px 16px;
+    margin: 0 0;/* reset margin for "row" */
+    color: rgb(117, 117, 117);
+    border-bottom: solid #ddd;
+}
+
+#ticket-state .sold-out{
+    background: rgb(244, 67, 54);
+    color: white;
+    padding: 3px 8px;
+    margin-left: 16px;
+}
+
+#ticket-state .residual{
+    padding: 0 8px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    
+}
+
+    /* TOUR LIST */
+
+#tour-list{
+    padding: 32px 0;
+    
+}
+
+#tour-list .tour-item{
+    margin-bottom: 16px;
+}
+
+#tour-list .tour-img{
+    width: 100%;
+    display: block;
+}
+
+#tour-list .tour-img:hover{
+    opacity: 0.5;
+}
+
+
+#tour-list .tour-infor{
+    padding: 0 16px 16px;
+    line-height: 22px;
+    background-color: white;
+}
+
+#tour-list .tour-place {
+    padding: 15px 0;
+    font-weight: 700;
+}
+
+#tour-list .tour-date {
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+#tour-list .tour-note {
+    margin-bottom: 15px;
+}
+
+#tour-list .btn-click{
+    display: inline-block;
+    line-height: 22px;
+    padding: 8px 12px;
+}
+
+/* CONTENT - CONTACT */
+
+#contact-box{
+    padding: 32px 0;
+}
+
+#infor-contact{
+    margin-bottom: 16px;
+}
+
+#infor-contact i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+    padding: 6px 20px 6px 0;
+}
+
+#enter-contact{
+}
+
+#enter-contact .form-control{
+    padding: 10px;
+    width: 100%;
+    border: solid 1px #ccc;
+}
+
+#enter-contact .submit-btn{
+    margin: 16px 0;
+    border: none;
+    padding: 8px 16px;
+    line-height: 22px;
+    float: right;
+    -webkit-appearance: none;
+}
+
+#enter-contact .submit-btn::after{
+    clear: both;
+}
+
+/* CONTENT - MAP */
+
+#map img{
+    width: 100%;
+}
+
+/* FOOTER */
+
+#footer {
+    padding: 64px 16px;
+}
+
+#footer #link-list{
+    padding: 10px;
+    text-align: center;
+}
+
+#footer .social-link{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .social-link:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copy-right{
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin: 15px 0;
+}
+
+#footer .copy-right a{
+    color: rgba(0, 0, 0, 0.6);
+}
+

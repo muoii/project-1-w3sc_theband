@@ -1,0 +1,125 @@
+/* BREAKPOINT */
+
+/* MOBILE & TABLET */
+@media (max-width: 1023px)  {
+    .btn-click{
+        padding: 12px 12px !important; 
+    }
+
+    .form-control{
+        padding: 15px 8px !important;
+    }
+
+    #infor-contact i[class*="ti-"]{
+        line-height: 2;
+    }
+
+    #enter-contact{
+        font-size: 17px;
+    }
+
+    #footer .social-link{
+        font-size: 24px;
+        margin: 8px;
+    }
+
+    #footer .copy-right a{
+        display: inline-block;
+        padding: 16px 0;
+    }
+}
+
+/* PC */
+@media (min-width: 1024px)  {
+    
+}
+
+/* TABLET */
+@media (min-width: 741px) and (max-width: 1023px)  {
+    
+}
+
+/* MOBILE */
+@media (max-width: 740px)  {
+
+    /* CSS common */
+    .s-ful-width{
+        width: 100% !important;
+    }
+
+    .s-col-ful{
+        width: 100% !important;
+    }
+
+    .s-mt8{
+        margin-top: 8px;
+    }
+    /* CSS selector */
+#header{
+    overflow: hidden;
+}
+
+#nav{
+    display: block;
+}
+
+#nav a:first-child{
+    display: inline-block;
+}
+
+#nav > .target {
+    display: block;
+}
+
+#nav .subnav-container .target{
+    line-height: 30px;
+}
+
+
+#search-btn{
+    display: none;
+}
+
+#menu-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    color: white;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#menu-nav:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+#header .subnav{
+    background: black;
+    position: initial;
+}
+
+#header .subnav .target{
+    width: 100%;
+    color: white;
+    background: black;
+}
+
+
+#list-mem .mem-item{
+}
+
+
+#list-mem .mem-name{
+    margin: 15px;
+}
+
+#list-mem .mem-img{
+    width: 60%;
+}
+
+#tour-list .tour-item{
+}
+/* MOBILE CSS - ENDING */
+}
